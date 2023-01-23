@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 50px;
+        }
+        .maindiv {
+            width: 300px;
+            height: 350px;
+            margin: auto;
+            background-color: grey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            border-radius: 10px;
+        }
+
+        .div1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .divinp {
+            width: 200px;
+        }
+
+        .udiv {
+            text-align: center;
+            width: 150px;
+            height: 30px;
+            background-color: antiquewhite;
+            border-radius: 5px;
+            
+
+        }
+        .but{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maindiv">
+        <p class="absm m-3">
+            <b>Abs Matrix</b>
+        </p>
+
+        <div class="div1 m-3">
+            <div class="udiv m-2">
+                <p id="screen2" class="pp"></p>
+            </div>
+
+            <div class="divinp">
+                <input id="show1" type="text" class=" m-1 inp">
+                <input id="show2" type="text" class="m-1 inp">
+            </div>
+
+
+        </div>
+
+
+
+        <div class="div2">
+            <button onclick="abs1()" id="but1" class="m-1 but">+</button>
+            <button onclick="abs2()" id="but2" class="m-1 but">-</button>
+            <button onclick="abs3()" id="but3" class="m-1 but">*</button>
+            <button onclick="abs4()" id="but4" class="m-1 but">/</button>
+            <button onclick="abs5()" id="but4" class="m-1 but">=</button>
+        </div>
+
+        <span class="span1">
+            <p id="screen" class="sren"> </p>
+        </span>
+    </div>
+
+
+</body>
+
+</html>
+<script>
+    let input1 = document.getElementById("show1")
+    let input2 = document.getElementById("show2")
+    let dre = document.getElementById("screen")
+    let dre2 = document.getElementById("screen")
+
+    function abs1() {
+        document.getElementById("screen").innerHTML = Number(show1.value) + Number(show2.value)
+    }
+    function abs2() {
+        document.getElementById("screen").innerHTML = Number(show1.value) - Number(show2.value)
+    }
+    function abs3() {
+        document.getElementById("screen").innerHTML = Number(show1.value) * Number(show2.value)
+    }
+    function abs4() {
+        document.getElementById("screen").innerHTML = Number(show1.value) / Number(show2.value)
+    }
+    function abs5() {
+        document.getElementById("screen2").innerHTML = dre2.innerHTML
+    }
+
+
+</script>
